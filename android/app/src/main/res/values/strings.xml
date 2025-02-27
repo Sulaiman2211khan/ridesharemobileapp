@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ridesharemobileapp</string>
+    <string name="title_activity_main">ridesharemobileapp</string>
+    <string name="package_name">rideshare.com.pk</string>
+    <string name="custom_url_scheme">rideshare.com.pk</string>
+</resources>
