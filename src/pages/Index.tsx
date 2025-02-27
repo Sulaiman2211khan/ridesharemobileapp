@@ -65,7 +65,7 @@ const Index = () => {
       <div className="flex flex-col min-h-screen bg-background safe-area-inset-padding">
         <header className="px-4 py-3 flex items-center justify-between">
           <MainDrawer>
-            {/* Drawer content is defined in the MainDrawer component */}
+            <div>Menu Content</div>
           </MainDrawer>
           <div className="flex-1 flex justify-center">
             <div className="h-10 w-10 flex items-center justify-center">
