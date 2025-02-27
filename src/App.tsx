@@ -11,10 +11,12 @@ import SearchPage from "./pages/SearchPage";
 import RideDetailsPage from "./pages/RideDetailsPage";
 import TripsPage from "./pages/TripsPage";
 import BookingsPage from "./pages/BookingsPage";
+import BookingDetailsPage from "./pages/BookingDetailsPage";
 import CreateRidePage from "./pages/CreateRidePage";
 import ProfilePage from "./pages/ProfilePage";
 import SettingsPage from "./pages/SettingsPage";
-import BookingDetailsPage from "./pages/BookingDetailsPage";
+import ChatListPage from "./pages/ChatListPage";
+import ChatPage from "./pages/ChatPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,6 +39,8 @@ const App = () => (
           <Route path="/create-ride" element={<CreateRidePage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/chats" element={<ChatListPage />} />
+          <Route path="/chat/:id" element={<ChatPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
