@@ -9,7 +9,7 @@ interface CardProps {
   onClick?: () => void;
 }
 
-export function Card({ children, className, pressable, onClick }: CardProps) {
+function Card({ children, className, pressable, onClick }: CardProps) {
   return (
     <div 
       className={cn(
