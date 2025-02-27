@@ -11,7 +11,8 @@ import {
   Star, 
   Settings, 
   LogOut,
-  Edit
+  Edit,
+  CreditCard
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useNavigate } from "react-router-dom";
@@ -113,6 +114,24 @@ const ProfilePage = () => {
           
           {/* App options */}
           <div className="space-y-4 border-t pt-6">
+            <ButtonMobile
+              variant="outline"
+              className="w-full justify-start"
+              onClick={() => navigate("/reviews")}
+            >
+              <Star className="h-5 w-5 mr-3" />
+              Ratings & Reviews
+            </ButtonMobile>
+            
+            <ButtonMobile
+              variant="outline"
+              className="w-full justify-start"
+              onClick={() => navigate("/payment")}
+            >
+              <CreditCard className="h-5 w-5 mr-3" />
+              Payment Methods
+            </ButtonMobile>
+            
             <ButtonMobile
               variant="outline"
               className="w-full justify-start"

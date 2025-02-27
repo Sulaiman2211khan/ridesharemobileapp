@@ -17,6 +17,9 @@ import ProfilePage from "./pages/ProfilePage";
 import SettingsPage from "./pages/SettingsPage";
 import ChatListPage from "./pages/ChatListPage";
 import ChatPage from "./pages/ChatPage";
+import WelcomeSplashPage from "./pages/WelcomeSplashPage";
+import ReviewsPage from "./pages/ReviewsPage";
+import PaymentPage from "./pages/PaymentPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +34,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/welcome" element={<WelcomeSplashPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/ride/:id" element={<RideDetailsPage />} />
           <Route path="/trips" element={<TripsPage />} />
@@ -39,6 +43,8 @@ const App = () => (
           <Route path="/create-ride" element={<CreateRidePage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
+          <Route path="/payment" element={<PaymentPage />} />
           <Route path="/chats" element={<ChatListPage />} />
           <Route path="/chat/:id" element={<ChatPage />} />
           <Route path="*" element={<NotFound />} />

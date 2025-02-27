@@ -37,7 +37,8 @@ const RegisterPage = () => {
         title: "Success",
         description: "Your account has been created",
       });
-      navigate("/login");
+      // Navigate to welcome splash page instead of login
+      navigate("/welcome");
     }, 1500);
   };
 
@@ -128,7 +129,7 @@ const RegisterPage = () => {
         
         <ButtonMobile
           type="submit"
-          className="w-full bg-blabla hover:bg-blabla/90"
+          className="w-full bg-[#2DBEFF] hover:bg-[#2DBEFF]/90 text-white"
           disabled={isLoading}
         >
           {isLoading ? "Creating account..." : "Create account"}
