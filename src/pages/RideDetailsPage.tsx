@@ -216,7 +216,7 @@ const RideDetailsPage = () => {
           </div>
           <ButtonMobile 
             onClick={() => setShowBookingDialog(true)}
-            className="bg-blabla hover:bg-blabla/90"
+            className="bg-[#2DBEFF] hover:bg-[#2DBEFF]/90 text-white"
           >
             Book now
           </ButtonMobile>
@@ -277,7 +277,7 @@ const RideDetailsPage = () => {
               <ButtonMobile variant="outline" onClick={() => setShowBookingDialog(false)}>
                 Cancel
               </ButtonMobile>
-              <ButtonMobile className="bg-blabla hover:bg-blabla/90" onClick={handleBook}>
+              <ButtonMobile className="bg-[#2DBEFF] hover:bg-[#2DBEFF]/90 text-white" onClick={handleBook}>
                 Confirm booking
               </ButtonMobile>
             </div>
